@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Use – PlantPilot</title>
+    <meta name="description" content="Terms of Use for the PlantPilot iOS app.">
+    <style>
+        :root {
+            --bg: #f6f8f6;
+            --card: #ffffff;
+            --text: #1b241d;
+            --muted: #5a685e;
+            --accent: #228b4e;
+            --accent-soft: rgba(34, 139, 78, 0.12);
+            --border: #dfe7e1;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #101612;
+                --card: #18211b;
+                --text: #eef3ef;
+                --muted: #a1b0a5;
+                --accent: #45c476;
+                --accent-soft: rgba(69, 196, 118, 0.16);
+                --border: #2a382e;
+            }
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.65;
+        }
+        .container {
+            max-width: 780px;
+            margin: 0 auto;
+            padding: 28px 18px 48px;
+        }
+        header {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 24px;
+        }
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+        }
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700;
+            font-size: 1.15rem;
+            color: var(--accent);
+            text-decoration: none;
+        }
+        .lang-switch {
+            font-size: 0.85rem;
+            color: var(--muted);
+            display: inline-flex;
+            gap: 6px;
+            align-items: center;
+        }
+        .lang-switch a, .lang-switch span {
+            padding: 4px 8px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: var(--muted);
+            border: 1px solid var(--border);
+            background: var(--card);
+        }
+        .lang-switch span.current {
+            color: var(--accent);
+            border-color: var(--accent);
+            background: var(--accent-soft);
+            font-weight: 600;
+        }
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        nav a {
+            text-decoration: none;
+            color: var(--muted);
+            font-size: 0.92rem;
+            padding: 6px 12px;
+            border-radius: 999px;
+            border: 1px solid var(--border);
+            background: var(--card);
+        }
+        nav a.active, nav a:hover {
+            color: var(--accent);
+            border-color: var(--accent);
+            background: var(--accent-soft);
+        }
+        main {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            padding: 26px 24px;
+        }
+        h1 {
+            margin-top: 0;
+            font-size: 1.8rem;
+            line-height: 1.25;
+        }
+        h2 {
+            margin-top: 26px;
+            margin-bottom: 8px;
+            font-size: 1.15rem;
+        }
+        p, li { color: var(--text); }
+        ul { padding-left: 20px; }
+        .meta {
+            color: var(--muted);
+            font-size: 0.92rem;
+        }
+        footer {
+            margin-top: 24px;
+            text-align: center;
+            font-size: 0.88rem;
+            color: var(--muted);
+        }
+        footer a { color: var(--muted); }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="header-top">
+            <a class="brand" href="index.html">🌿 PlantPilot</a>
+            <div class="lang-switch" aria-label="Language">
+                <a href="../nutzungsbedingungen.html">DE</a>
+                <span class="current">EN</span>
+            </div>
+        </div>
+        <nav aria-label="Navigation">
+            <a href="index.html">Support &amp; FAQ</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a class="active" href="terms.html">Terms of Use</a>
+            <a href="imprint.html">Imprint</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Terms of Use</h1>
+        <p class="meta">Last updated: November 2026</p>
+
+        <h2>1. Scope &amp; Apple Standard EULA</h2>
+        <p>
+            These Terms of Use govern your use of the iOS app <strong>PlantPilot</strong>, provided by
+            Carlos Reinhardt (contact details in <a href="imprint.html">Imprint</a>).
+            In addition, downloading and using the app via the Apple App Store is governed by Apple’s Licensed Application End User License Agreement
+            (<a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener noreferrer">Apple Standard EULA</a>).
+        </p>
+
+        <h2>2. Features (Free &amp; PlantPilot Pro)</h2>
+        <ul>
+            <li><strong>Free Version:</strong> Manage up to 5 own plants, connect 1 Bluetooth thermo-hygrometer, and use 3 free trials of on-device AI plant recognition.</li>
+            <li><strong>PlantPilot Pro (One-Time Purchase, No Subscription):</strong> One-time in-app purchase via the Apple App Store unlocking unlimited plants, unlimited Bluetooth sensors, unlimited AI plant recognition, automatic iCloud backup, and household/vacation sharing.</li>
+            <li><strong>Restore Purchases:</strong> Once purchased, PlantPilot Pro is tied to your Apple ID and can be restored on compatible Apple devices using the same Apple ID via “Restore Purchases”.</li>
+        </ul>
+
+        <h2>3. Household Sharing &amp; Member Roles</h2>
+        <p>
+            With PlantPilot Pro, a home can be shared via Apple iCloud (CloudKit) with up to 5 members in total. Invited guests without their own PlantPilot Pro license can view shared plants, log watering, and manage their own care logs; creating, editing, or deleting plants as well as changing climate or sensor settings is reserved for Pro owners/members. The owner may revoke shares and vacation passes at any time.
+        </p>
+
+        <h2>4. Plant Care Guidance &amp; AI Recognition Disclaimer</h2>
+        <p>
+            Watering intervals, climate adjustments, care recommendations, and AI plant recognition results provided by PlantPilot are intended solely as non-binding guidance.
+        </p>
+        <p>
+            Individual microclimates, soil mixes, pot materials, and plant health conditions vary, and automated image recognition may produce inaccurate suggestions. Always verify plant species and soil moisture yourself—especially where plant toxicity for children or pets may be relevant.
+        </p>
+
+        <h2>5. Third-Party Services &amp; Hardware Availability</h2>
+        <p>
+            iCloud synchronization and in-app purchases require an active Apple ID and internet access to Apple’s services. Bluetooth thermo-hygrometer integration applies to compatible third-party BLE devices; no warranty is given regarding third-party hardware accuracy or firmware changes.
+        </p>
+
+        <h2>6. Limitation of Liability</h2>
+        <p>
+            Liability for injury to life, body, or health as well as for intent and gross negligence is governed by statutory law. In cases of slight negligence involving material contractual obligations, liability is limited to foreseeable, typical damages. Any further liability—such as for plant damage resulting from care recommendations—is excluded to the extent permitted by law.
+        </p>
+
+        <h2>7. Governing Law</h2>
+        <p>
+            The laws of the Federal Republic of Germany apply, excluding the UN Convention on Contracts for the International Sale of Goods, without prejudice to mandatory consumer protection laws of your country of residence.
+        </p>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="year">2026</span> Carlos Reinhardt · PlantPilot ·
+            <a href="index.html">Support</a> ·
+            <a href="privacy.html">Privacy Policy</a> ·
+            <a href="imprint.html">Imprint</a>
+        </p>
+    </footer>
+</div>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlantPilot – Support &amp; FAQ</title>
+    <meta name="description" content="Support, FAQ, and legal information for the PlantPilot iOS app – smart houseplant care.">
+    <style>
+        :root {
+            --bg: #f6f8f6;
+            --card: #ffffff;
+            --text: #1b241d;
+            --muted: #5a685e;
+            --accent: #228b4e;
+            --accent-soft: rgba(34, 139, 78, 0.12);
+            --border: #dfe7e1;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #101612;
+                --card: #18211b;
+                --text: #eef3ef;
+                --muted: #a1b0a5;
+                --accent: #45c476;
+                --accent-soft: rgba(69, 196, 118, 0.16);
+                --border: #2a382e;
+            }
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.65;
+        }
+        .container {
+            max-width: 780px;
+            margin: 0 auto;
+            padding: 28px 18px 48px;
+        }
+        header {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 24px;
+        }
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+        }
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700;
+            font-size: 1.15rem;
+            color: var(--accent);
+            text-decoration: none;
+        }
+        .lang-switch {
+            font-size: 0.85rem;
+            color: var(--muted);
+            display: inline-flex;
+            gap: 6px;
+            align-items: center;
+        }
+        .lang-switch a, .lang-switch span {
+            padding: 4px 8px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: var(--muted);
+            border: 1px solid var(--border);
+            background: var(--card);
+        }
+        .lang-switch span.current {
+            color: var(--accent);
+            border-color: var(--accent);
+            background: var(--accent-soft);
+            font-weight: 600;
+        }
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        nav a {
+            text-decoration: none;
+            color: var(--muted);
+            font-size: 0.92rem;
+            padding: 6px 12px;
+            border-radius: 999px;
+            border: 1px solid var(--border);
+            background: var(--card);
+        }
+        nav a.active, nav a:hover {
+            color: var(--accent);
+            border-color: var(--accent);
+            background: var(--accent-soft);
+        }
+        main {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            padding: 26px 24px;
+        }
+        h1 {
+            margin-top: 0;
+            font-size: 1.85rem;
+            line-height: 1.25;
+        }
+        h2 {
+            margin-top: 28px;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+        p, li { color: var(--text); }
+        .lead {
+            color: var(--muted);
+            font-size: 1.02rem;
+        }
+        .pill {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 999px;
+            background: var(--accent-soft);
+            color: var(--accent);
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 12px;
+            margin: 18px 0;
+        }
+        .mini-card {
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 14px 16px;
+        }
+        .mini-card h3 {
+            margin: 0 0 6px;
+            font-size: 1rem;
+        }
+        .mini-card p {
+            margin: 0;
+            font-size: 0.92rem;
+            color: var(--muted);
+        }
+        details {
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 12px 16px;
+            margin-bottom: 10px;
+        }
+        summary {
+            cursor: pointer;
+            font-weight: 600;
+        }
+        details p {
+            margin: 10px 0 0;
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+        .support-box {
+            margin-top: 24px;
+            padding: 18px;
+            border-radius: 14px;
+            background: var(--accent-soft);
+            border: 1px solid var(--accent);
+        }
+        .button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 16px;
+            border-radius: 10px;
+            background: var(--accent);
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        footer {
+            margin-top: 24px;
+            text-align: center;
+            font-size: 0.88rem;
+            color: var(--muted);
+        }
+        footer a { color: var(--muted); }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="header-top">
+            <a class="brand" href="index.html">🌿 PlantPilot</a>
+            <div class="lang-switch" aria-label="Language">
+                <a href="../index.html">DE</a>
+                <span class="current">EN</span>
+            </div>
+        </div>
+        <nav aria-label="Navigation">
+            <a class="active" href="index.html">Support &amp; FAQ</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Use</a>
+            <a href="imprint.html">Imprint</a>
+        </nav>
+    </header>
+
+    <main>
+        <span class="pill">iOS App Support</span>
+        <h1>Welcome to PlantPilot Support</h1>
+        <p class="lead">
+            PlantPilot helps you care for your indoor and balcony plants based on actual need – with climate-adjusted watering intervals, optional Bluetooth thermo-hygrometers, on-device AI plant recognition, and shared household management via iCloud.
+        </p>
+
+        <div class="card-grid">
+            <div class="mini-card">
+                <h3>💧 Dynamic Care</h3>
+                <p>Takes temperature, humidity, season, light location, pot size, and substrate into account.</p>
+            </div>
+            <div class="mini-card">
+                <h3>🌡️ Bluetooth Sensors</h3>
+                <p>Reads compatible BLE thermo-hygrometers directly on your iPhone and assigns them to rooms.</p>
+            </div>
+            <div class="mini-card">
+                <h3>✨ On-Device AI</h3>
+                <p>Identifies plant genera locally on your iPhone – without uploading photos to any cloud.</p>
+            </div>
+        </div>
+
+        <h2>Frequently Asked Questions (FAQ)</h2>
+
+        <details>
+            <summary>How does PlantPilot Pro work (one-time purchase, no subscription)?</summary>
+            <p>
+                The free version of PlantPilot includes up to 5 plants, 1 Bluetooth sensor, and 3 free AI plant recognition trials.
+                <strong>PlantPilot Pro</strong> is a single one-time in-app purchase (no subscription) that unlocks unlimited plants, unlimited Bluetooth sensors, unlimited AI recognition, automatic iCloud backup, and iCloud household sharing.
+            </p>
+        </details>
+
+        <details>
+            <summary>How do I restore my purchase on a new iPhone?</summary>
+            <p>
+                Open the <strong>Climate</strong> tab in PlantPilot and tap <strong>“Restore Purchases”</strong> in the <strong>PlantPilot Pro</strong> section at the top.
+                Make sure you are signed in with the same Apple ID used for the original purchase. If iCloud backup was active, your plant data will sync back automatically.
+            </p>
+        </details>
+
+        <details>
+            <summary>My Bluetooth thermo-hygrometer isn’t showing up – what can I do?</summary>
+            <p>
+                Check under <em>iOS Settings → Privacy &amp; Security → Bluetooth</em> that PlantPilot has Bluetooth access.
+                Hold your iPhone close to the sensor during initial pairing and tap <strong>“Scan for Sensors Again”</strong> in the <strong>Climate</strong> tab.
+            </p>
+        </details>
+
+        <details>
+            <summary>How do household sharing and vacation mode work?</summary>
+            <p>
+                Only the household owner needs PlantPilot Pro (up to 5 members per household).
+                Invited roommates or temporary vacation caretakers can join using the free version to view plants, log watering, and coordinate care.
+            </p>
+        </details>
+
+        <details>
+            <summary>Are my plant photos uploaded for AI recognition?</summary>
+            <p>
+                No. Plant recognition runs 100% locally on your iPhone using Apple Core ML and Vision. Your photos never leave your device unless you enable iCloud backup or share your household via iCloud.
+            </p>
+        </details>
+
+        <div class="support-box">
+            <strong>Need personal assistance or want to report a bug?</strong>
+            <p style="margin: 6px 0 0;">
+                Feel free to send us an email (ideally with a short description, your iOS version, and your iPhone model):<br>
+                Email: <a href="mailto:plantpilot.support@gmail.com">plantpilot.support@gmail.com</a>
+            </p>
+            <a class="button" href="mailto:plantpilot.support@gmail.com?subject=PlantPilot%20Support">Contact Support via Email</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="year">2026</span> Carlos Reinhardt · PlantPilot ·
+            <a href="privacy.html">Privacy Policy</a> ·
+            <a href="terms.html">Terms of Use</a> ·
+            <a href="imprint.html">Imprint</a>
+        </p>
+    </footer>
+</div>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

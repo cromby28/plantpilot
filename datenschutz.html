@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datenschutzerklärung – PlantPilot</title>
+    <meta name="description" content="Datenschutzerklärung für die iOS-App PlantPilot und diese Support-Website gemäß DSGVO.">
+    <style>
+        :root {
+            --bg: #f6f8f6;
+            --card: #ffffff;
+            --text: #1b241d;
+            --muted: #5a685e;
+            --accent: #228b4e;
+            --accent-soft: rgba(34, 139, 78, 0.12);
+            --border: #dfe7e1;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #101612;
+                --card: #18211b;
+                --text: #eef3ef;
+                --muted: #a1b0a5;
+                --accent: #45c476;
+                --accent-soft: rgba(69, 196, 118, 0.16);
+                --border: #2a382e;
+            }
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.65;
+        }
+        .container {
+            max-width: 780px;
+            margin: 0 auto;
+            padding: 28px 18px 48px;
+        }
+        header {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 24px;
+        }
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+        }
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700;
+            font-size: 1.15rem;
+            color: var(--accent);
+            text-decoration: none;
+        }
+        .lang-switch {
+            font-size: 0.85rem;
+            color: var(--muted);
+            display: inline-flex;
+            gap: 6px;
+            align-items: center;
+        }
+        .lang-switch a, .lang-switch span {
+            padding: 4px 8px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: var(--muted);
+            border: 1px solid var(--border);
+            background: var(--card);
+        }
+        .lang-switch span.current {
+            color: var(--accent);
+            border-color: var(--accent);
+            background: var(--accent-soft);
+            font-weight: 600;
+        }
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        nav a {
+            text-decoration: none;
+            color: var(--muted);
+            font-size: 0.92rem;
+            padding: 6px 12px;
+            border-radius: 999px;
+            border: 1px solid var(--border);
+            background: var(--card);
+        }
+        nav a.active, nav a:hover {
+            color: var(--accent);
+            border-color: var(--accent);
+            background: var(--accent-soft);
+        }
+        main {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            padding: 26px 24px;
+        }
+        h1 {
+            margin-top: 0;
+            font-size: 1.8rem;
+            line-height: 1.25;
+        }
+        h2 {
+            margin-top: 26px;
+            margin-bottom: 8px;
+            font-size: 1.15rem;
+        }
+        p, li { color: var(--text); }
+        ul { padding-left: 20px; }
+        .meta {
+            color: var(--muted);
+            font-size: 0.92rem;
+        }
+        .summary-box {
+            padding: 14px 16px;
+            border-radius: 12px;
+            background: var(--accent-soft);
+            border: 1px solid var(--accent);
+            margin: 16px 0 22px;
+        }
+        footer {
+            margin-top: 24px;
+            text-align: center;
+            font-size: 0.88rem;
+            color: var(--muted);
+        }
+        footer a { color: var(--muted); }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="header-top">
+            <a class="brand" href="index.html">🌿 PlantPilot</a>
+            <div class="lang-switch" aria-label="Sprache">
+                <span class="current">DE</span>
+                <a href="en/privacy.html">EN</a>
+            </div>
+        </div>
+        <nav aria-label="Navigation">
+            <a href="index.html">Support &amp; FAQ</a>
+            <a class="active" href="datenschutz.html">Datenschutz</a>
+            <a href="nutzungsbedingungen.html">Nutzungsbedingungen</a>
+            <a href="impressum.html">Impressum</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Datenschutzerklärung</h1>
+        <p class="meta">Stand: November 2026</p>
+
+        <div class="summary-box">
+            <strong>Kurzfassung:</strong> PlantPilot benötigt kein Benutzerkonto, enthält keine Werbung und nutzt keine Tracking- oder Analyse-SDKs von Drittanbietern. Deine Pflanzendaten und Fotos bleiben grundsätzlich lokal auf deinem Gerät – oder auf Wunsch verschlüsselt in deinem persönlichen Apple-iCloud-Konto.
+        </div>
+
+        <h2>1. Verantwortlicher</h2>
+        <p>
+            Verantwortlich für die Datenverarbeitung im Sinne der Datenschutz-Grundverordnung (DSGVO) ist:<br>
+            Carlos Reinhardt<br>
+            Komphausbadstraße 29<br>
+            52062 Aachen, Deutschland<br>
+            E-Mail: <a href="mailto:plantpilot.support@gmail.com">plantpilot.support@gmail.com</a>
+        </p>
+
+        <h2>2. Datenerhebung und Verarbeitung in der App PlantPilot</h2>
+        <h3>a) Lokale App-Daten</h3>
+        <p>
+            Alle von dir angelegten Inhalte – insbesondere Pflanzennamen, Gattungen, Standorte, Notizen, Gießhistorie, Klimawerte sowie optional hinzugefügte Pflanzenfotos – werden lokal in der App-Sandbox deines iPhones gespeichert. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (Bereitstellung der App-Funktionen).
+        </p>
+        <p>
+            Zusätzlich speichert die App lokal auf deinem Gerät (über <code>UserDefaults</code> sowie die iOS Keychain) technische Statusinformationen wie Onboarding-Fortschritt und die Anzahl der bereits genutzten kostenlosen KI-Testläufe.
+        </p>
+
+        <h3>b) Kamera, Fotomediathek und On-Device-KI-Pflanzenerkennung</h3>
+        <p>
+            Wenn du ein Pflanzenfoto aufnimmst oder aus deiner Fotomediathek auswählst, greift PlantPilot ausschließlich auf die von dir gewählten Bilder zu (Rechtsgrundlage: deine Einwilligung bzw. Geräteeinstellung, Art. 6 Abs. 1 lit. a DSGVO).
+        </p>
+        <p>
+            Die KI-gestützte Pflanzenerkennung läuft <strong>vollständig lokal auf deinem Gerät</strong> mittels Apple Vision und Core ML. Es werden keinerlei Bilder zur Analyse an unsere Server oder Drittanbieter übertragen.
+        </p>
+
+        <h3>c) Bluetooth Low Energy (Thermo-Hygrometer)</h3>
+        <p>
+            Sofern du in den App-Einstellungen die Sensor-Integration aktivierst und die Bluetooth-Berechtigung erteilst, scannt PlantPilot nach kompatiblen Bluetooth-Thermo-Hygrometern in deiner Nähe, um Temperatur, relative Luftfeuchtigkeit, Signalstärke und Gerätenamen auszulesen.
+        </p>
+        <p>
+            Diese Daten werden ausschließlich zur Berechnung des Gießbedarfs innerhalb der App verarbeitet und nicht zur Standortverfolgung oder Erstellung von Bewegungsprofilen genutzt. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO bzw. deine Bluetooth-Freigabe.
+        </p>
+
+        <h3>d) Mitteilungen (Push- &amp; lokale Benachrichtigungen)</h3>
+        <p>
+            PlantPilot nutzt – nach deiner ausdrücklichen Zustimmung – lokale iOS-Mitteilungen, um dich an fällige Gießtermine zu erinnern. Bei aktiviertem iCloud-Haushalts-Sharing können zudem stille Systembenachrichtigungen über den Apple Push Notification Service (APNs) genutzt werden, um Änderungen zwischen Haushaltsmitgliedern zeitnah zu synchronisieren. Du kannst Mitteilungen jederzeit in den iOS-Einstellungen deaktivieren.
+        </p>
+
+        <h3>e) Apple iCloud / CloudKit (Pro-Backup &amp; Haushalts-Sharing)</h3>
+        <p>
+            Nutzerinnen und Nutzer mit <strong>PlantPilot Pro</strong> erhalten eine automatische Datensicherung in ihrer privaten iCloud-Datenbank (Apple CloudKit) sowie die Möglichkeit, ihr Zuhause über iCloud-Freigaben mit bis zu 5 Personen (Mitbewohner oder temporäre Urlaubs-Gießgäste) zu teilen.
+        </p>
+        <ul>
+            <li>Die Speicherung und Synchronisation erfolgt ausschließlich über die CloudKit-Infrastruktur von Apple Inc. (bzw. Apple Distribution International Ltd. im EWR) auf Grundlage deiner Apple-ID und der von Apple bereitgestellten Sicherheits- und Datenschutzstandards.</li>
+            <li>Als App-Entwickler haben wir <strong>keinen Zugriff</strong> auf deine private iCloud-Apple-ID oder deine privaten CloudKit-Datenbanken.</li>
+            <li>Beim Annehmen einer Haushaltseinladung werden dein Anzeigename (sofern in iCloud freigegeben) sowie gemeinsame Pflanzendaten und Gieß-Protokolle innerhalb der geteilten CloudKit-Zone für die Mitglieder dieses Haushalts sichtbar.</li>
+        </ul>
+
+        <h3>f) In-App-Käufe (Apple StoreKit 2)</h3>
+        <p>
+            Der Erwerb von <strong>PlantPilot Pro</strong> (einmaliger In-App-Kauf) wird vollständig über den Apple App Store (StoreKit 2) abgewickelt. Zahlungsdaten (wie Kreditkarte oder Apple-ID-Abrechnung) werden ausschließlich von Apple verarbeitet; wir erhalten lediglich eine anonyme Transaktionsbestätigung durch iOS, dass das Pro-Feature freigeschaltet ist.
+        </p>
+
+        <h3>g) Keine Werbung, kein Tracking, keine Drittanbieter-Analyse</h3>
+        <p>
+            PlantPilot verwendet keine Werbenetzwerke, keine Tracking-Technologien und keine Analyse-SDKs von Drittanbietern.
+        </p>
+
+        <h2>3. Datenverarbeitung beim Besuch dieser Website (GitHub Pages)</h2>
+        <p>
+            Diese Support- und Informationswebsite wird über <strong>GitHub Pages</strong> (GitHub, Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA bzw. GitHub B.V., Prins Bernhardplein 200, 1097 JB Amsterdam, Niederlande) gehostet.
+        </p>
+        <p>
+            Beim Aufruf der Seiten erfasst GitHub aus technischen Gründen automatisch Server-Logfiles (z. B. IP-Adresse, Zeitpunkt des Zugriffs, Browsertyp, Betriebssystem), um die Auslieferung und Sicherheit der Website zu gewährleisten (Art. 6 Abs. 1 lit. f DSGVO). Weitere Informationen findest du in der Datenschutzerklärung von GitHub unter
+            <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">docs.github.com</a>.
+        </p>
+
+        <h2>4. Support-Anfragen per E-Mail</h2>
+        <p>
+            Wenn du uns per E-Mail kontaktierst, verarbeiten wir deine E-Mail-Adresse und die übermittelten Angaben ausschließlich zur Bearbeitung deiner Anfrage (Art. 6 Abs. 1 lit. b bzw. lit. f DSGVO). Nach Abschluss der Bearbeitung löschen wir die Daten, sofern keine gesetzlichen Aufbewahrungspflichten bestehen.
+        </p>
+
+        <h2>5. Speicherdauer &amp; Löschung</h2>
+        <p>
+            Lokale App-Daten kannst du jederzeit direkt in der App löschen oder vollständig entfernen, indem du PlantPilot deinstallierst. In deinem privaten iCloud-Konto gespeicherte Daten kannst du zusätzlich über die iOS-Einstellungen unter <em>[Dein Name] → iCloud → iCloud-Speicher verwalten</em> verwalten und löschen.
+        </p>
+
+        <h2>6. Deine Rechte nach der DSGVO</h2>
+        <p>Du hast im Rahmen der geltenden gesetzlichen Bestimmungen jederzeit das Recht auf:</p>
+        <ul>
+            <li>Auskunft über die verarbeiteten personenbezogenen Daten (Art. 15 DSGVO),</li>
+            <li>Berichtigung unrichtiger Daten (Art. 16 DSGVO),</li>
+            <li>Löschung deiner Daten (Art. 17 DSGVO),</li>
+            <li>Einschränkung der Verarbeitung (Art. 18 DSGVO),</li>
+            <li>Datenübertragbarkeit (Art. 20 DSGVO),</li>
+            <li>Widerspruch gegen die Verarbeitung (Art. 21 DSGVO),</li>
+            <li>Widerruf einer erteilten Einwilligung mit Wirkung für die Zukunft (Art. 7 Abs. 3 DSGVO),</li>
+            <li>Beschwerde bei einer Datenschutz-Aufsichtsbehörde (Art. 77 DSGVO).</li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="year">2026</span> Carlos Reinhardt · PlantPilot ·
+            <a href="index.html">Support</a> ·
+            <a href="nutzungsbedingungen.html">Nutzungsbedingungen</a> ·
+            <a href="impressum.html">Impressum</a>
+        </p>
+    </footer>
+</div>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imprint – PlantPilot</title>
+    <meta name="description" content="Legal notice / Imprint for the PlantPilot iOS app under § 5 DDG (Germany).">
+    <style>
+        :root {
+            --bg: #f6f8f6;
+            --card: #ffffff;
+            --text: #1b241d;
+            --muted: #5a685e;
+            --accent: #228b4e;
+            --accent-soft: rgba(34, 139, 78, 0.12);
+            --border: #dfe7e1;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #101612;
+                --card: #18211b;
+                --text: #eef3ef;
+                --muted: #a1b0a5;
+                --accent: #45c476;
+                --accent-soft: rgba(69, 196, 118, 0.16);
+                --border: #2a382e;
+            }
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.65;
+        }
+        .container {
+            max-width: 780px;
+            margin: 0 auto;
+            padding: 28px 18px 48px;
+        }
+        header {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 24px;
+        }
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+        }
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700;
+            font-size: 1.15rem;
+            color: var(--accent);
+            text-decoration: none;
+        }
+        .lang-switch {
+            font-size: 0.85rem;
+            color: var(--muted);
+            display: inline-flex;
+            gap: 6px;
+            align-items: center;
+        }
+        .lang-switch a, .lang-switch span {
+            padding: 4px 8px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: var(--muted);
+            border: 1px solid var(--border);
+            background: var(--card);
+        }
+        .lang-switch span.current {
+            color: var(--accent);
+            border-color: var(--accent);
+            background: var(--accent-soft);
+            font-weight: 600;
+        }
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        nav a {
+            text-decoration: none;
+            color: var(--muted);
+            font-size: 0.92rem;
+            padding: 6px 12px;
+            border-radius: 999px;
+            border: 1px solid var(--border);
+            background: var(--card);
+        }
+        nav a.active, nav a:hover {
+            color: var(--accent);
+            border-color: var(--accent);
+            background: var(--accent-soft);
+        }
+        main {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            padding: 26px 24px;
+        }
+        h1 {
+            margin-top: 0;
+            font-size: 1.8rem;
+            line-height: 1.25;
+        }
+        h2 {
+            margin-top: 24px;
+            margin-bottom: 8px;
+            font-size: 1.15rem;
+        }
+        p { color: var(--text); }
+        footer {
+            margin-top: 24px;
+            text-align: center;
+            font-size: 0.88rem;
+            color: var(--muted);
+        }
+        footer a { color: var(--muted); }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="header-top">
+            <a class="brand" href="index.html">🌿 PlantPilot</a>
+            <div class="lang-switch" aria-label="Language">
+                <a href="../impressum.html">DE</a>
+                <span class="current">EN</span>
+            </div>
+        </div>
+        <nav aria-label="Navigation">
+            <a href="index.html">Support &amp; FAQ</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Use</a>
+            <a class="active" href="imprint.html">Imprint</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Imprint (Legal Notice)</h1>
+
+        <h2>Information pursuant to § 5 DDG (Germany)</h2>
+        <p>
+            Carlos Reinhardt<br>
+            Komphausbadstraße 29<br>
+            52062 Aachen<br>
+            Germany
+        </p>
+
+        <h2>Contact</h2>
+        <p>
+            Email: <a href="mailto:plantpilot.support@gmail.com">plantpilot.support@gmail.com</a>
+        </p>
+
+        <h2>Responsible for Content (§ 18(2) MStV)</h2>
+        <p>
+            Carlos Reinhardt<br>
+            Address as stated above.
+        </p>
+
+        <h2>Consumer Dispute Resolution</h2>
+        <p>
+            We are neither willing nor obliged to participate in dispute resolution proceedings before a consumer arbitration board.
+        </p>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="year">2026</span> Carlos Reinhardt · PlantPilot ·
+            <a href="index.html">Support</a> ·
+            <a href="privacy.html">Privacy Policy</a> ·
+            <a href="terms.html">Terms of Use</a>
+        </p>
+    </footer>
+</div>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutzungsbedingungen – PlantPilot</title>
+    <meta name="description" content="Nutzungsbedingungen für die iOS-App PlantPilot.">
+    <style>
+        :root {
+            --bg: #f6f8f6;
+            --card: #ffffff;
+            --text: #1b241d;
+            --muted: #5a685e;
+            --accent: #228b4e;
+            --accent-soft: rgba(34, 139, 78, 0.12);
+            --border: #dfe7e1;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #101612;
+                --card: #18211b;
+                --text: #eef3ef;
+                --muted: #a1b0a5;
+                --accent: #45c476;
+                --accent-soft: rgba(69, 196, 118, 0.16);
+                --border: #2a382e;
+            }
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.65;
+        }
+        .container {
+            max-width: 780px;
+            margin: 0 auto;
+            padding: 28px 18px 48px;
+        }
+        header {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 24px;
+        }
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+        }
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700;
+            font-size: 1.15rem;
+            color: var(--accent);
+            text-decoration: none;
+        }
+        .lang-switch {
+            font-size: 0.85rem;
+            color: var(--muted);
+            display: inline-flex;
+            gap: 6px;
+            align-items: center;
+        }
+        .lang-switch a, .lang-switch span {
+            padding: 4px 8px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: var(--muted);
+            border: 1px solid var(--border);
+            background: var(--card);
+        }
+        .lang-switch span.current {
+            color: var(--accent);
+            border-color: var(--accent);
+            background: var(--accent-soft);
+            font-weight: 600;
+        }
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        nav a {
+            text-decoration: none;
+            color: var(--muted);
+            font-size: 0.92rem;
+            padding: 6px 12px;
+            border-radius: 999px;
+            border: 1px solid var(--border);
+            background: var(--card);
+        }
+        nav a.active, nav a:hover {
+            color: var(--accent);
+            border-color: var(--accent);
+            background: var(--accent-soft);
+        }
+        main {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            padding: 26px 24px;
+        }
+        h1 {
+            margin-top: 0;
+            font-size: 1.8rem;
+            line-height: 1.25;
+        }
+        h2 {
+            margin-top: 26px;
+            margin-bottom: 8px;
+            font-size: 1.15rem;
+        }
+        p, li { color: var(--text); }
+        ul { padding-left: 20px; }
+        .meta {
+            color: var(--muted);
+            font-size: 0.92rem;
+        }
+        footer {
+            margin-top: 24px;
+            text-align: center;
+            font-size: 0.88rem;
+            color: var(--muted);
+        }
+        footer a { color: var(--muted); }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="header-top">
+            <a class="brand" href="index.html">🌿 PlantPilot</a>
+            <div class="lang-switch" aria-label="Sprache">
+                <span class="current">DE</span>
+                <a href="en/terms.html">EN</a>
+            </div>
+        </div>
+        <nav aria-label="Navigation">
+            <a href="index.html">Support &amp; FAQ</a>
+            <a href="datenschutz.html">Datenschutz</a>
+            <a class="active" href="nutzungsbedingungen.html">Nutzungsbedingungen</a>
+            <a href="impressum.html">Impressum</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Nutzungsbedingungen</h1>
+        <p class="meta">Stand: November 2026</p>
+
+        <h2>1. Geltungsbereich &amp; Apple Standard-EULA</h2>
+        <p>
+            Diese Nutzungsbedingungen regeln die Nutzung der iOS-App <strong>PlantPilot</strong>, bereitgestellt durch
+            Carlos Reinhardt (Kontaktdaten siehe <a href="impressum.html">Impressum</a>).
+            Ergänzend gilt für den Download und die Nutzung über den Apple App Store das Standard-Endbenutzer-Lizenzvertrag-Dokument von Apple
+            (<a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener noreferrer">Apple Standard EULA</a>).
+        </p>
+
+        <h2>2. Funktionsumfang (Free &amp; PlantPilot Pro)</h2>
+        <ul>
+            <li><strong>Kostenlose Basisversion:</strong> Verwaltung von bis zu 5 eigenen Pflanzen, Anbindung von 1 Bluetooth Thermo-Hygrometer sowie 3 kostenlose Tests der On-Device-KI-Pflanzenerkennung.</li>
+            <li><strong>PlantPilot Pro (Einmalkauf ohne Abo):</strong> Einmaliger In-App-Kauf über den Apple App Store zur Freischaltung unbegrenzter Pflanzen, unbegrenzter Bluetooth-Sensoren, unbegrenzter KI-Pflanzenerkennung, automatischer iCloud-Sicherung sowie der Haushalts- und Urlaubs-Freigabe.</li>
+            <li><strong>Käufe wiederherstellen:</strong> Ein einmal erworbener Pro-Zugang ist an deine Apple-ID gebunden und kann auf kompatiblen Apple-Geräten derselben Apple-ID jederzeit über „Käufe wiederherstellen“ reaktiviert werden.</li>
+        </ul>
+
+        <h2>3. Haushalts-Sharing &amp; Rollenrechte</h2>
+        <p>
+            Mit PlantPilot Pro kann ein Zuhause über Apple iCloud (CloudKit) mit insgesamt bis zu 5 Mitgliedern geteilt werden. Eingeladene Personen ohne eigenes PlantPilot Pro können Pflanzen des geteilten Haushalts ansehen, gießen und Pflegeeinträge protokolliert verwalten; das Anlegen, Bearbeiten oder Löschen von Pflanzen sowie das Ändern von Klima- und Sensoreinstellungen bleibt dem Pro-Eigentümer bzw. Pro-Mitgliedern vorbehalten. Die Eigentümerin oder der Eigentümer kann Freigaben und Urlaubsvertretungen jederzeit beenden.
+        </p>
+
+        <h2>4. Hinweis zur Pflanzenpflege &amp; KI-Erkennung</h2>
+        <p>
+            Die von PlantPilot berechneten Gießintervalle, Klimaeinschätzungen und Pflegehinweise sowie die Ergebnisse der automatischen KI-Pflanzenerkennung dienen ausschließlich als unverbindliche Orientierungshilfe.
+        </p>
+        <p>
+            Insbesondere können Standortfaktoren, individuelle Substratmischungen, Topfmaterialien oder Krankheitsbilder abweichen, und automatische Bilderkennung kann fehlerhafte Vorschläge liefern. Prüfe im Zweifel – insbesondere bei potenziell giftigen Pflanzen im Haushalt mit Kindern oder Haustieren – die tatsächliche Pflanzenart und Bodenfeuchte eigenverantwortlich.
+        </p>
+
+        <h2>5. Verfügbarkeit externer Dienste &amp; Hardware</h2>
+        <p>
+            Für iCloud-Synchronisation und In-App-Kaufabwicklung ist eine funktionierende Verbindung zu den jeweiligen Diensten von Apple sowie ein aktives iCloud-Konto erforderlich. Die Unterstützung von Bluetooth Thermo-Hygrometern bezieht sich auf kompatible BLE-Geräte von Drittherstellern, für deren Hardware-Genauigkeit oder Firmware-Änderungen keine Gewähr übernommen wird.
+        </p>
+
+        <h2>6. Haftung</h2>
+        <p>
+            Für Schäden aus der Verletzung des Lebens, des Körpers oder der Gesundheit sowie bei Vorsatz und grober Fahrlässigkeit gelten die gesetzlichen Bestimmungen. Bei leicht fahrlässiger Verletzung wesentlicher Vertragspflichten ist die Haftung auf den vertragstypischen, vorhersehbaren Schaden begrenzt. Im Übrigen ist eine Haftung – etwa für Pflanzenschäden durch abweichende Pflegeempfehlungen – im gesetzlich zulässigen Umfang ausgeschlossen.
+        </p>
+
+        <h2>7. Schlussbestimmungen</h2>
+        <p>
+            Es gilt das Recht der Bundesrepublik Deutschland unter Ausschluss des UN-Kaufrechts, soweit zwingende Verbraucherschutzvorschriften des Wohnsitzstaates dem nicht entgegenstehen.
+        </p>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="year">2026</span> Carlos Reinhardt · PlantPilot ·
+            <a href="index.html">Support</a> ·
+            <a href="datenschutz.html">Datenschutz</a> ·
+            <a href="impressum.html">Impressum</a>
+        </p>
+    </footer>
+</div>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
